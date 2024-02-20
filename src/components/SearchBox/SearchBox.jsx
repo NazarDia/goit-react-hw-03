@@ -1,3 +1,12 @@
 import style from './SearchBox.module.css';
 
-export const SearchBox = () => {};
+export const SearchBox = ({ value, onChange }) => {
+  return (
+    <input
+      type="text"
+      placeholder="Search by name"
+      value={value}
+      onChange={e => onChange(e.target.value)}
+    />
+  );
+};

@@ -1,0 +1,14 @@
+.contactContainer {
+  border: 2px solid #000;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+.deleteBtn {
+  border: 1px solid #000;
+  border-radius: 6px;
+  background-color: lightgrey;
+}
+.deleteBtn:hover,
+.deleteBtn:focus {
+  border: 2px solid #000;
+}
