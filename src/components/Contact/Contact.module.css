@@ -1,14 +1,32 @@
 .contactContainer {
-  border: 2px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 8px;
-  margin-bottom: 6px;
+  margin-bottom: 10px;
 }
-.deleteBtn {
-  border: 1px solid #000;
-  border-radius: 6px;
+.contactItems {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.listItem {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.contactBtn {
   background-color: lightgrey;
+  color: black;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.deleteBtn:hover,
-.deleteBtn:focus {
-  border: 2px solid #000;
+.contactBtn:hover,
+.contactBtn:focus {
+  border: 2px solid black;
 }

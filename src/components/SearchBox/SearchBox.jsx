@@ -1,12 +1,14 @@
 import style from './SearchBox.module.css';
 
-export const SearchBox = ({ value, onChange }) => {
+export const SearchBox = ({ onSearchChange }) => {
   return (
-    <input
-      type="text"
-      placeholder="Search by name"
-      value={value}
-      onChange={e => onChange(e.target.value)}
-    />
+    <div className={style.containerInput}>
+      <p>Find contacts by name</p>
+      <input
+        className={style.searchInput}
+        type="text"
+        onChange={e => onSearchChange(e.target.value)}
+      />
+    </div>
   );
 };
